@@ -47,26 +47,38 @@ My MSc research was on **few-shot Automatic Speech Recognition for low-resource 
 
 ## Featured Projects
 
-> My three strongest repositories — each with a verified, reproducible result. Full code linked on each title.
+> Four end-to-end builds — from raw data to a tested, containerised API, plus two applied LLM tools. Every metric below is a measured result committed to the repo, not an estimate. Full write-ups, architecture diagrams and honestly-documented limitations are in each README.
 
-### 🏭 [Predictive Maintenance Classifier](https://github.com/Gaurang-Verse/Machine-Learning-Verse)
-Benchmarked five candidate models (Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) on 136,429 industrial sensor records using cross-validated macro F1, with a full preprocessing pipeline built in scikit-learn.
+### ⚡ [Household Electricity Demand Forecasting](https://github.com/Gaurang-Verse/electricity-demand-forecasting)
+Leakage-safe LightGBM pipeline forecasting the next 24 hours of household power use from smart-meter history, with a strict walk-forward backtest (12 folds) and a holdout window no modelling decision ever touched.
 
-**0.9357** mean 5-fold ROC-AUC · `scikit-learn` `XGBoost` `pandas`
+**0.655 kW** holdout RMSE · **25%** better than seasonal-naive (backtest) · `LightGBM` `FastAPI` `MLflow` `Docker` `74 tests`
 
-### 💳 [Credit-Card Fraud Detection (SVM)](https://github.com/Gaurang-Verse/Credit-Card-Fraud-Detection-Using-ML)
-Published research. Trained an SVM classifier on 284,807 transactions (0.17% fraud rate) using RandomUnderSampler + SMOTE to handle severe class imbalance.
+### 📄 [arXiv Paper Classifier](https://github.com/Gaurang-Verse/arxiv-paper-classifier)
+Fine-tuned DistilBERT model predicting a paper's arXiv subject categories (172-label multi-label problem) from title and abstract, trained on a 150K-paper sample from a 2.9M-row Kaggle snapshot. Full pipeline: data validation → baseline → transformer fine-tune → threshold tuning → served API.
 
-**0.98** precision · **0.87** recall · **0.92** F1 · **0.976** ROC-AUC
+**0.596** test micro-F1 · **0.323** macro-F1 · `DistilBERT` `PyTorch` `FastAPI` `MLflow` `Docker` `28 tests`
+
+### 🔍 [AI Code Reviewer](https://github.com/Gaurang-Verse/ai-code-reviewer)
+A GitHub Action that reviews every pull request's Python diffs with Gemini and posts findings — security risks, performance issues, code quality — as a PR comment. Includes retry/backoff, model fallback, and per-file failure isolation so one bad call never loses the whole review.
+
+Runs automatically on every PR · `Gemini API` `PyGithub` `GitHub Actions` `7 offline tests`
 
 ### 🤖 [Groq LLM Streaming Chatbot](https://github.com/Gaurang-Verse/Groq-LLM-Chatbot)
-Class-based Streamlit chat application with generator-based token streaming across four open-source LLMs (Llama 3, Mixtral, Gemma) via the Groq LPU inference API — built to demonstrate low-latency conversational AI.
+Multi-model streaming chat app (Streamlit + Groq's LPU inference engine) with runtime model switching and multi-turn memory. Benchmarked head-to-head across two models on latency and throughput.
 
-`Python` `Streamlit` `Groq API`
+**0.34s** time-to-first-token · **~95** chunks/sec (GPT-OSS 120B) · `Streamlit` `Groq API`
 
 **MSc research (dissertation, not on GitHub):** few-shot Automatic Speech Recognition for low-resource languages using MMS-1B and CTC decoding, reaching **7.33% CER**.
 
-<sub>More work — EDA, SQL analytics, and API/data-engineering projects — is on my [full repository list](https://github.com/Gaurang-Verse?tab=repositories).</sub>
+---
+
+## How I Build
+
+- **Measured, not assumed** — every number in a README traces back to a committed results file from an actual run.
+- **One-time evaluation** — test/holdout sets are scored exactly once, after all decisions are frozen on validation data.
+- **Negative results kept** — failed runs and bugs (a mis-calibrated classifier, a leaking feature builder, a false drift alarm) are documented, not hidden.
+- **Checks that prove themselves** — drift and leakage tests are validated with both a null test and a positive control.
 
 ---
 
