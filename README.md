@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:00C9A7&height=180&section=header&text=Gaurang%20Kumbhar&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20%2F%20Machine%20Learning%20Engineer%20%7C%20MSc%20AI%2C%20Dublin%20City%20University&descAlignY=58&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:00C9A7&height=180&section=header&text=Gaurang%20Kumbhar&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20%2F%20Machine%20Learning%20Engineer%20%7C%20MSc%20AI%2C%20Dublin%20City%20University%20(Graduate)&descAlignY=58&descSize=16" width="100%"/>
 
 <a href="https://www.linkedin.com/in/gaurangkumbhar"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:gaurang.kumbhar1332003@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
@@ -10,13 +10,13 @@
 
 ## About Me
 
-I'm an AI/ML graduate engineer finishing an **MSc in Computing (Artificial Intelligence)** at **Dublin City University**, following a **B.E. in Artificial Intelligence & Data Science** (SPPU, 2:1). I work across applied machine learning, Generative AI engineering, and data analytics — and I come from a background that also includes real business-analysis experience (Agile, client-facing requirements work), which is fairly unusual for a technical profile.
+I'm an AI/ML engineer, recently graduated with an **MSc in Computing (Artificial Intelligence)** from **Dublin City University**, following a **B.E. in Artificial Intelligence & Data Science** (SPPU, 2:1). I work across applied machine learning, Generative AI engineering, and data analytics — and I come from a background that also includes real business-analysis experience (Agile, client-facing requirements work), which is fairly unusual for a technical profile.
 
-My MSc research is on **few-shot Automatic Speech Recognition for low-resource languages**, and I've published two peer-reviewed papers on ML-based fraud detection and neural computation. I'm currently targeting **AI/ML Engineer, Data Scientist, and Applied AI** roles in the Irish/EU market.
+My MSc research was on **few-shot Automatic Speech Recognition for low-resource languages**, and I've published two peer-reviewed papers on ML-based fraud detection and neural computation. I'm now actively looking for roles as an **AI/ML Engineer, Data Scientist, Applied AI Engineer, or Machine Learning Research Engineer** in the Irish/EU market.
 
-- 🔭 Currently finishing my MSc dissertation on few-shot ASR (MMS-1B, CTC decoding, **7.33% CER**)
+- 🎓 MSc Computing (AI), Dublin City University — graduated
+- 🔍 Actively interviewing for AI/ML Engineer, Data Scientist & Applied AI roles (Ireland/EU)
 - 🌱 Deepening my Generative AI stack: LangGraph, GraphRAG, vector databases
-- 💼 Open to AI/ML Engineer & Data Scientist roles (Ireland/EU)
 - 📫 Reach me at **gaurang.kumbhar1332003@gmail.com**
 
 ---
@@ -47,66 +47,26 @@ My MSc research is on **few-shot Automatic Speech Recognition for low-resource l
 
 ## Featured Projects
 
-> Everything below is drawn from my own solo-authored repositories. Only results I could verify from committed notebooks/outputs are shown.
-
-<table>
-<tr>
-<td width="50%" valign="top">
+> My three strongest repositories — each with a verified, reproducible result. Full code linked on each title.
 
 ### 🏭 [Predictive Maintenance Classifier](https://github.com/Gaurang-Verse/Machine-Learning-Verse)
-Benchmarked five candidate models (Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) on 136,429 industrial sensor records using cross-validated macro F1.
+Benchmarked five candidate models (Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) on 136,429 industrial sensor records using cross-validated macro F1, with a full preprocessing pipeline built in scikit-learn.
 
 **0.9357** mean 5-fold ROC-AUC · `scikit-learn` `XGBoost` `pandas`
 
-</td>
-<td width="50%" valign="top">
-
 ### 💳 [Credit-Card Fraud Detection (SVM)](https://github.com/Gaurang-Verse/Credit-Card-Fraud-Detection-Using-ML)
-Published research. Trained an SVM classifier on 284,807 transactions (0.17% fraud rate) with RandomUnderSampler + SMOTE for class imbalance.
+Published research. Trained an SVM classifier on 284,807 transactions (0.17% fraud rate) using RandomUnderSampler + SMOTE to handle severe class imbalance.
 
 **0.98** precision · **0.87** recall · **0.92** F1 · **0.976** ROC-AUC
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📊 [Exploratory Data Analysis Suite](https://github.com/Gaurang-Verse/Exploratory-Data-Analysis-Insights)
-Structured EDA across four datasets of very different shape — from 180 rows to **783,667 rows** — using one consistent, dtype-driven analysis template, including segment-level customer profiling.
-
-`pandas` `Matplotlib` `Seaborn`
-
-</td>
-<td width="50%" valign="top">
-
-### 🗃️ [SQL Analytics Portfolio](https://github.com/Gaurang-Verse/SQL-Verse-Here)
-Annotated SQL analyses on retail and airline datasets — window functions, CASE-based segmentation, and CTE-based ranking views — covering customer value, route profitability, and price positioning.
-
-`SQL` `MySQL`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📈 [Stock Market Data Client](https://github.com/Gaurang-Verse/Stock-market-API-Project)
-Built a reusable `StockFetch` API client for the Alpha Vantage API, handling cross-exchange ticker resolution (US, BSE, São Paulo, Frankfurt) and exporting OHLCV time series with Plotly visualisation.
-
-`Python` `requests` `Plotly`
-
-</td>
-<td width="50%" valign="top">
-
 ### 🤖 [Groq LLM Streaming Chatbot](https://github.com/Gaurang-Verse/Groq-LLM-Chatbot)
-Class-based Streamlit chat app with generator-based token streaming across four open-source LLMs (Llama 3, Mixtral, Gemma) via the Groq LPU inference API.
+Class-based Streamlit chat application with generator-based token streaming across four open-source LLMs (Llama 3, Mixtral, Gemma) via the Groq LPU inference API — built to demonstrate low-latency conversational AI.
 
 `Python` `Streamlit` `Groq API`
 
-</td>
-</tr>
-</table>
+**MSc research (dissertation, not on GitHub):** few-shot Automatic Speech Recognition for low-resource languages using MMS-1B and CTC decoding, reaching **7.33% CER**.
 
-**MSc research (not on GitHub, dissertation-stage):** few-shot Automatic Speech Recognition for low-resource languages using MMS-1B and CTC decoding, reaching **7.33% CER**.
+<sub>More work — EDA, SQL analytics, and API/data-engineering projects — is on my [full repository list](https://github.com/Gaurang-Verse?tab=repositories).</sub>
 
 ---
 
@@ -132,11 +92,8 @@ Class-based Streamlit chat app with generator-based token streaming across four 
 
 <div align="center">
 
-**Dublin, Ireland** · Open to AI/ML Engineer & Data Scientist roles
+**Dublin, Ireland** · Open to AI/ML Engineer, Data Scientist & Applied AI roles
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9A7,100:0F2027&height=100&section=footer" width="100%"/>
 
 </div>
-
-
-
